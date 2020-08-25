@@ -1,0 +1,192 @@
+<html>
+<head><title>EXTRENSIC 2020</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<style>
+    .bt{ 
+ background-color: black; /* Green */ 
+  border: 2px solid; 
+  color: white; 
+  padding: 15px 32px; 
+  text-align: center; 
+  text-decoration: none; 
+  display: inline-block; 
+  font-size: 16px; 
+  width: 10%; 
+} 
+.bt:hover{ 
+   background-color:darkblue; /* Green */ 
+   border: 2px solid black; 
+  color: white; 
+} 
+.carousel.top-to-bottom .item {
+   -webkit-transition: 0.6s ease-in-out top;
+   -moz-transition: 0.6s ease-in-out top;
+   -ms-transition: 0.6s ease-in-out top;
+   -o-transition: 0.6s ease-in-out top;
+   transition: 0.6s ease-in-out top;
+}
+.carousel.top-to-bottom .active {
+   top: 0;
+}
+
+.carousel.top-to-bottom .next {
+   top: 400px;
+}
+
+.carousel.top-to-bottom .prev {
+   top: -400px;
+}
+.carousel.top-to-bottom .item {
+   left: 0;
+}
+#my_text_slider
+{
+    font-size:3em;
+    height:50px;
+    font-family: 'Times New Roman';
+}
+table,th,td{border: 2px solid black;
+    border-collapse: collapse;
+text-align: center;
+    color: black;} 
+</style>
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+</head>
+<body style="background-image: url(hobbies.png);background-repeat: no-repeat;background-size: cover;font-family: sans-serif;">
+<a name="top"></a>
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button>
+  <a href="#About Us" class="w3-bar-item w3-button">About Us</a>
+  <a href="#EventList" class="w3-bar-item w3-button">Events</a>
+  <a href="#Locate Us" class="w3-bar-item w3-button">Locate Us</a>
+    <a href="#Gallery" class="w3-bar-item w3-button">Gallery</a>
+    <a href="#Updates" class="w3-bar-item w3-button">Updates</a>
+    <a href="#Contact Us" class="w3-bar-item w3-button">Contact Us</a>
+</div>
+
+<div id="main">
+<div class="w3-teal">
+  <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <h1>Extrensic 2020</h1>
+    <h4>Showcase Your Talent...</h4>
+  </div>
+    </div></div>
+    <div id="About Us">
+    <center style="font-family: sans-serif;color: black;"><h1 style="color: black;  background-color: gainsboro">Welcome..To Extrensic 2020</h1>
+        <img src="bg.jpg" style="width: 300; height: 300;">
+    <center style="color: black;  background-color: gainsboro"><h3>Extrensic is an event that provides you a platform to explore all your hobbies from acting to dancing to sing... <br><br>Excited?</h3><br>
+  <h3>Want to participate alone? Want to participate with a team? <br> <br> Register now and win some exciting prizes. 
+        </h3><br><br><br>
+        <button type="submit" class="bt"onclick="location.replace('event.html');">Let's Go</button><br>
+        </center></center>
+    </div>
+    <br><br>
+    <div id="EventList" class="wrapper"> 
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" class="carousel-inner">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+    <li data-target="#myCarousel" data-slide-to="3"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+    <center><img src="dance.jpg" alt="dance" width="60%"></center>
+        <div class="carousel-caption">
+            <h1>Dance</h1>
+            <h2>On 23/08/2020 at 12:30-3:30. </h2>
+            <h2>For queries contact Ananya(+91-000-000-0000)</h2></div>
+    </div>
+    <div class="item">
+       <center> <img src="sing.jpg" alt="sing" width="60%"></center>
+        <div class="carousel-caption">
+            <h1>Dramatics</h1>
+            <h2>On 23/08/2020 at 3:30-6:30. </h2>
+            <h2>For queries contact Divyam(+91-000-000-0000)</h2></div>
+    </div>
+<div class="item">
+       <center> <img src="act.jpg" alt="acting" width="60%"></center>
+        <div class="carousel-caption">
+            <h1>Music</h1>
+            <h2>On 24/08/2020 at 12:30-3:30. </h2>
+            <h2>For queries contact Chetna(+91-000-000-0000)</h2></div>
+    </div>
+      
+    <div class="item">
+       <center> <img src="draw.png" alt="draw" width="60%"></center>
+        <div class="carousel-caption">
+            <h1>Art</h1>
+            <h2>On 24/08/2020 at 3:30-6:30.</h2>
+            <h2>For queries contact Gaurav(+91-000-000-0000)</h2></div></div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+    <span class="sr-only">Next</span>
+  </a>
+    </div></div>
+    <center><div id="Locate Us">
+        <br>
+    <h2 style="color: black;  background-color: gainsboro">Locate Us..</h2>
+    <iframe src="https://maps.google.com/maps?q=hinjewadi,pune,maharashtra,india&t=&z=13&ie=UTF8&iwloc=&output=embed" style="height: 500;width: 500;"></iframe></div></center>
+    <br><br>
+    <center><div id="Gallery">
+    <h2 style="color: black;  background-color: gainsboro">Glimpse from the past...</h2>
+    <img src="a1.jpg" style="height: 300;width: 300"> <img src="art1.jpg" style="height: 300;width: 300"> <img src="contact.jpg"style="height: 300;width: 300"> <br> <img src="creative.png" style="height: 300;width: 300"> <img src="sing.jpg" style="height: 300;width: 300"><br> <img src="s1.jpg" style="height: 300;width: 300">
+    </div></center>
+    <br><br><br>
+    <center><div id="Updates" style="background-color: gainsboro;color: black">
+    <h2>Latest Ongoing...</h2>
+    <table style="width:80%" style="font-size:200"><h3>
+  <tr>
+    <th>Event Name</th>
+      <th>Event Date</th> </tr>
+        <tr>
+    <td><a href="SOP.docx">1.Registration Date</a></td>
+            <td>23/07/2020</td></tr>
+        <tr>
+        <td><a href="SOP.docx">2.Dance SOP</a></td>
+            <td>30/07/2020</td></tr></h3></table>
+    </div></center>
+    <br><br>
+    <div id="Contact Us">
+<pre style="font-family: sans-serif;background-color: gainsboro;color: black"><h3><center>Get in Touch with us:
+    
+    1.Email- extrensic2020@gmail.com
+    
+    2.Phone - +91-999-999-9999
+    </center></h3></pre>
+    <center>
+    <a href="https://www.facebook.com/"><img src="fb.jpg" style="height: 200;width: 200;"></a> <a href="https://www.instagram.com/"><img src="insta.jpg" style="height: 200;width: 200;"></a> <br>
+    <a href="https://in.linkedin.com/"><img src="linkedIn.jpg"style="height: 200;width: 200;"></a> <a href="https://www.twitter.com/"><img src="twittwr.png" style="height: 200;width: 200;"></a></center>
+    </div><br><br><br><br>
+    <a href="#top"><h3 style="color: black;background-color: gainsboro;"><center>Back to Top</center></h3></a>
+</body>
+</html>
